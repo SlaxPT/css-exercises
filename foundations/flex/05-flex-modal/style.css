@@ -20,6 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
 }
 
 .icon {
@@ -33,6 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -43,11 +46,11 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
-  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
 }
 
 button {
@@ -66,4 +69,56 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+#icon-container {
+  display: flex;
+  justify-content : center;
+  align-items: top;
+  flex-direction: row;
+}
+
+#header-container{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#button-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 4px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.left-side {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+  padding-right: 15px;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text {
+  padding-right: 5px;
 }
